@@ -1,134 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El Guacal Música - Próximamente</title>
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        color: #333;
-        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      }
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>El Guacal - Próximamente</title>
+    <meta
+      name="description"
+      content="El Guacal - La Plataforma Colaborativa de Música."
+    />
+    <meta name="keywords" content="" />
 
-      .construction-container {
-        text-align: center;
-        max-width: 800px;
-        padding: 40px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      }
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-      .logo {
-        max-width: 300px;
-        margin-bottom: 30px;
-      }
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-      h1 {
-        color: #2c3e50;
-        margin-bottom: 20px;
-        font-size: 2.5em;
-      }
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
-      p {
-        font-size: 1.2em;
-        margin-bottom: 30px;
-        line-height: 1.6;
-      }
-
-      .made-in {
-        font-style: italic;
-        color: #7f8c8d;
-        margin-top: 20px;
-      }
-
-      .countdown {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin: 30px 0;
-      }
-
-      .countdown-item {
-        background: #2c3e50;
-        color: white;
-        padding: 15px 20px;
-        border-radius: 5px;
-        font-size: 1.5em;
-        min-width: 70px;
-      }
-
-      .countdown-label {
-        font-size: 0.8em;
-        display: block;
-        margin-top: 5px;
-        color: #ecf0f1;
-      }
-
-      .social-icons {
-        margin-top: 30px;
-      }
-
-      .social-icons a {
-        margin: 0 10px;
-        color: #2c3e50;
-        font-size: 1.5em;
-        transition: color 0.3s;
-      }
-
-      .social-icons a:hover {
-        color: #e74c3c;
-      }
-
-      @media (max-width: 600px) {
-        .construction-container {
-          padding: 20px;
-        }
-
-        .logo {
-          max-width: 200px;
-        }
-
-        .countdown {
-          flex-wrap: wrap;
-        }
-      }
-    </style>
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="construction-container">
-      <img src="img/under.jpg" alt="El Guacal Música" class="logo" />
-      <h1>¡Próximamente!</h1>
-      <p>
-        Estamos trabajando en algo increíble para ti. Nuestro sitio web estará
-        disponible muy pronto.
-      </p>
-      <p>
-        Mientras tanto, síguenos en nuestras redes sociales para estar al tanto
-        de las novedades.
-      </p>
 
-      <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center px-3 fixed-top">
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">El Guacal</h1>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section transparent-background">
+        <div
+          class="container text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h1 class="text-uppercase">El Guacal <br /></h1>
+              <h3 class="text-uppercase">
+                La Plataforma Colaborativa de Música.
+              </h3>
+            </div>
+            <div
+              class="countdown d-flex justify-content-center"
+              data-count="2025/06/20"
+            >
+              <div>
+                <h3 class="count-days"></h3>
+                <h4>Días</h4>
+              </div>
+              <div>
+                <h3 class="count-hours"></h3>
+                <h4>Horas</h4>
+              </div>
+              <div>
+                <h3 class="count-minutes"></h3>
+                <h4>Minutos</h4>
+              </div>
+              <div>
+                <h3 class="count-seconds"></h3>
+                <h4>Segundos</h4>
+              </div>
+            </div>
+            <div class="mt-4 mb-2 text-center">
+              <p>
+                Estamos trabajando en algo increíble para ti. Nuestro sitio web
+                estará disponible muy pronto.
+              </p>
+              <h6 class="mt-4 mb-2">
+                Mientras tanto, síguenos en nuestras redes sociales para estar
+                al tanto de las novedades.
+              </h6>
+            </div>
+            <div class="social-links">
+              <a href="https://www.youtube.com/@ELGUACALMEDIA"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+    </main>
+
+    <footer id="footer" class="footer transparent-background">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Contacto</h4>
+              <p>
+                <strong>Teléfono:</strong> <span>+58 416 9590218</span><br />
+                <strong>Correo electrónico:</strong>
+                <span>elguacalven@gmail.com</span><br />
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex"></div>
+
+          <div class="col-lg-3 col-md-6 d-flex"></div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4>¡Síguenos!</h4>
+            <div class="social-links d-flex">
+              <a href="https://www.youtube.com/@ELGUACALMEDIA" class="linkedin"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="made-in">Música hecha en Venezuela</div>
-    </div>
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">El Guacal</strong>
+          <span>Todos los derechos reservados.</span>
+        </p>
+        <div class="credits">Creado por <a href="#">Quantlas.com</a></div>
+      </div>
+    </footer>
 
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
