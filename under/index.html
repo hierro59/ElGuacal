@@ -111,26 +111,6 @@
         Estamos trabajando en algo increíble para ti. Nuestro sitio web estará
         disponible muy pronto.
       </p>
-
-      <div class="countdown">
-        <div class="countdown-item">
-          <span id="days">00</span>
-          <span class="countdown-label">Días</span>
-        </div>
-        <div class="countdown-item">
-          <span id="hours">00</span>
-          <span class="countdown-label">Horas</span>
-        </div>
-        <div class="countdown-item">
-          <span id="minutes">00</span>
-          <span class="countdown-label">Minutos</span>
-        </div>
-        <div class="countdown-item">
-          <span id="seconds">00</span>
-          <span class="countdown-label">Segundos</span>
-        </div>
-      </div>
-
       <p>
         Mientras tanto, síguenos en nuestras redes sociales para estar al tanto
         de las novedades.
@@ -150,36 +130,5 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Contador regresivo (ejemplo: 30 días desde hoy)
-      const countdown = () => {
-        const countDate = new Date();
-        countDate.setDate(countDate.getDate() + 30);
-
-        const now = new Date().getTime();
-        const gap = countDate - now;
-
-        const second = 1000;
-        const minute = second * 60;
-        const hour = minute * 60;
-        const day = hour * 24;
-
-        const textDay = Math.floor(gap / day);
-        const textHour = Math.floor((gap % day) / hour);
-        const textMinute = Math.floor((gap % hour) / minute);
-        const textSecond = Math.floor((gap % minute) / second);
-
-        document.getElementById("days").innerText =
-          textDay < 10 ? "0" + textDay : textDay;
-        document.getElementById("hours").innerText =
-          textHour < 10 ? "0" + textHour : textHour;
-        document.getElementById("minutes").innerText =
-          textMinute < 10 ? "0" + textMinute : textMinute;
-        document.getElementById("seconds").innerText =
-          textSecond < 10 ? "0" + textSecond : textSecond;
-      };
-
-      setInterval(countdown, 1000);
-    </script>
   </body>
 </html>
